@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/list_item_bg_selector"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:id="@+id/iv_icon"
+                android:src="@drawable/ic_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:text="應用名稱"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RatingBar
+            android:isIndicator="true"
+            android:id="@+id/rb_star"
+            android:layout_marginTop="5dp"
+            android:progressDrawable="@drawable/custom_ratingbar"
+            android:rating="2.5"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_below="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_below="@+id/rb_star"
+            android:id="@+id/tv_size"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:text="3.70MB"
+            android:textSize="16sp"
+            android:textColor="#8000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="下載"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+        <View
+            android:background="#8000"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"/>
+
+        <TextView
+            android:padding="5dp"
+            android:singleLine="true"
+            android:id="@+id/tv_des"
+            android:text="ლ(°◕‵ƹ′◕ლ)mua! (*╯3╰)"
+            android:textSize="16sp"
+            android:textColor="#8000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
